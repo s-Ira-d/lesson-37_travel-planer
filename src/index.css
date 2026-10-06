@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f8f5;
+  color: #18352a;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 38px;
+  color: #174d35;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #6b8176;
+  font-size: 16px;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #dcebe2;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #71867c;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 26px;
+  font-weight: 700;
+  color: #17613d;
+}
+
+.controls {
+  background: #ffffff;
+  border: 1px solid #dcebe2;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.search {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.search input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbded3;
+  border-radius: 8px;
+  outline: none;
+  color: #18352a;
+  background: #fbfdfc;
+  transition: 0.2s ease;
+}
+
+.search input::placeholder {
+  color: #8a9c94;
+}
+
+.search input:focus {
+  border-color: #3c9b69;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filters select,
+.sort select {
+  min-height: 40px;
+  padding: 10px 12px;
+  border: 1px solid #cbded3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #244b39;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.filters select:hover,
+.sort select:hover {
+  border-color: #9ccbb0;
+}
+
+.filters select:focus,
+.sort select:focus {
+  border-color: #3c9b69;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+}
+
+.sort select {
+  min-width: 180px;
+}
+
+.clear-button {
+  min-height: 40px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #dff1e7;
+  color: #17613d;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.clear-button:hover {
+  background: #cce8d8;
+}
+
+.clear-button:active {
+  transform: scale(0.98);
+}
+
+.trips-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.trips-header h2 {
+  color: #174d35;
+  font-size: 24px;
+}
+
+.trip-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.trip-card {
+  background: #ffffff;
+  border: 1px solid #dcebe2;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.2s ease;
+}
+
+.trip-card:hover {
+  border-color: #9ccbb0;
+}
+
+.trip-card h2 {
+  color: #174d35;
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.trip-country {
+  color: #71867c;
+  margin-bottom: 16px;
+}
+
+.trip-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.trip-info p {
+  color: #426052;
+  font-size: 14px;
+}
+
+.trip-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #17613d !important;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.status-wishlist {
+  background: #e8f4ed;
+  color: #26704b;
+}
+
+.status-planned {
+  background: #dcefe5;
+  color: #17613d;
+}
+
+.status-visited {
+  background: #cce6d8;
+  color: #125535;
+}
+
+.trip-card select {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #cbded3;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #244b39;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.trip-card select:focus {
+  border-color: #3c9b69;
+}
+
+.empty {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+  border: 1px solid #dcebe2;
+  border-radius: 12px;
+  color: #71867c;
+}
